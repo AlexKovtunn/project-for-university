@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>portal</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="">
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__container">
+					<div class="header__logo">
+						<img src="./img/header/logo.svg" alt="лого ЛЭТИ" class="header__logo-img">
+					</div>
+
+					<h1 class="header__title">
+						ИС "Практики"
+					</h1>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			  <section class="choice">
+				<div class="container">
+					<div class="choice__container">
+						<h1 class="choice__title">
+							личный кабинет
+						</h1>
+
+						<div class="choice__buttons">
+							<div class="choice__buttons-entry button__entry choice-button">
+								<span>
+									ВХОД
+								</span>
+							</div>
+
+							<div class="choice__buttons-reg button__reg choice-button">
+								<span>
+									РЕГИСТРАЦИЯ
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="choice__container choice__container-reg none">
+						<h1 class="choice__title">
+							регистрация
+						</h1>
+
+						<form class="choice__registration window-reg">
+							<input class="window-reg__input-name window-reg__input" type="text" name="fullName" required placeholder="Ваше ФИО">
+						  
+							<input class="window-reg__input-mail window-reg__input" type="email" name="email" required placeholder="Ваша почта">
+						  
+							<input class="window-reg__input-password window-reg__input" type="password" name="password" required placeholder="Ваш пароль">
+						  
+							<div class="window-reg__custom-select">
+								<div class="window-reg__select-selected"><span>Выберите значение</span></div>
+								<div class="window-reg__select-options">
+								  <div class="window-reg__select-option" data-value="university">ЛЭТИ</div>
+								  <div class="window-reg__select-option" data-value="company">Предприятие</div>
+								</div>
+								<input class="window-reg__real-select" type="hidden" name="userRole">
+							  </div>
+						  
+							<label>
+								<input type="submit" value="Submit" class="window-reg__submit">
+								<div class="window-reg__submit-custom window-button">
+									<span>Зарегистрироваться</span>
+								</div>
+							</label>
+						</form>
+
+						<div class="window-reg__exit">
+							<span>
+								Вернуться назад
+							</span>
+						</div>
+					</div>
+
+					<div class="choice__container choice__container-entry none">
+						<h1 class="choice__title">
+							вход
+						</h1>
+
+						<form class="choice__registration window-entry">  
+							<input class="window-reg__input-mail window-reg__input" type="email" name="email" required placeholder="Ваша почта">
+						  
+							<input class="window-reg__input-password window-reg__input" type="password" name="password" required placeholder="Ваш пароль">
+						
+							<label>
+								<input type="submit" value="Submit" class="window-reg__submit">
+								<div class="window-entry__submit-custom window-button">
+									<span>Войти</span>
+								</div>
+							</label>
+						</form>
+
+						<div class="window-reg__exit">
+							<span>
+								Вернуться назад
+							</span>
+						</div>
+					</div>
+				</div>
+			  </section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<p class="footer__text">
+
+				</p>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="./js/main.js"></script>
+	
+</body>
+</html>

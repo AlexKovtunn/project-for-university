@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>личный кабинет</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="">
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__container">
+					<div class="header__logo">
+						<img src="./img/header/logo.svg" alt="лого ЛЭТИ" class="header__logo-img">
+					</div>
+
+					<h1 class="header__title">
+						ИС "Практики"
+					</h1>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			  <section class="cabinet">
+				<div class="container">
+					<div class="cabinet__body">
+                        <div class="cabinet__acc">
+                            <div class="cabinet__acc-flex">
+								<div class="cabinet__acc-avatar">
+									<img src="./img/cabinet/avatar.png" alt="" alt="user avatar" class="cabinet__acc-img">
+									<input type="file" name="UserAvatar" accept="image/*" class="cabinet__acc-input">
+								</div>
+	
+								<div class="cabinet__acc-desc">
+									<h3 class="cabinet__acc-name">
+										Name
+									</h3>
+								</div>
+							</div>
+
+							<div class="cabinet__acc-companies-list none"><!-- cabinet__acc-backtomain -->
+								Список предприятий
+							</div>
+
+							<div class="cabinet__acc-documents-list none">
+								Список документов
+							</div>
+
+							<div class="cabinet__acc-edit">
+								Редактировать профиль
+							</div>
+
+							<div class="cabinet__acc-backtomain none">
+								Назад
+							</div>
+
+							<div class="cabinet__acc-exit">
+								Выйти из аккаунта
+							</div>
+                        </div>
+
+                        <div class="cabinet__main">
+							<div class="cabinet__main-base">
+								  <ul class="cabinet__main-list">
+									
+								  </ul>
+							</div>
+
+							  <div class="cabinet__main-profile">
+								<div class="cabinet__edit-university edit-university">
+									<form method="POST" class="edit-university__form" enctype="multipart/form-data">
+										<h3 class="edit-university__title">
+											Данные об университете:
+										</h3>
+
+										<label class="edit-university__label">
+											Адрес университета:
+
+											<input type="text" name="universityAdress" class="edit-university__input-text">
+										</label>
+
+										<label class="edit-university__label">
+											Почтовый индекс:
+
+											<input type="text" name="universityIndex" class="edit-university__input-text">
+										</label>
+
+										<label class="edit-university__label">
+											ОГРН:
+
+											<input type="text" name="universityOGRN" class="edit-university__input-text">
+										</label>
+
+										<label class="edit-university__label">
+											ИНН:
+
+											<input type="text" name="universityINN" class="edit-university__input-text">
+										</label>
+
+										<label class="edit-university__label">
+											КПП:
+
+											<input type="text" name="universityKPP" class="edit-university__input-text">
+										</label>
+
+										<label class="edit-university__label-file">
+											Скан печати:
+
+											<input type="file" name="universityStamp" class="edit-university__input-file" id="universityStamp">
+										</label>
+
+										<h3 class="edit-university__title">
+											Данные о сотруднике университета:
+										</h3>
+
+										<label class="edit-university__label">
+											Ф.И.О. сотрудника:
+
+											<input type="text" name="universityViceRectorName" class="edit-university__input-text">
+										</label>
+
+										<label class="edit-university__label">
+											Полное Ф.И.О. сотрудника в родительном падеже:
+
+											<input type="text" name="universityViceRectorNameFull" class="edit-university__input-text">
+										</label>
+
+										<label class="edit-university__label">
+											Должность сотрудника (с большой буквы):
+
+											<input type="text" name="universityJobTitle" class="edit-university__input-text">
+										</label>
+
+										<label class="edit-university__label">
+											Должность сотрудника в родительном падеже (с маленькой буквы):
+
+											<input type="text" name="universityJobTitleFull" class="edit-university__input-text">
+										</label>
+
+										<label class="edit-university__label">
+											Номер доверенности:
+
+											<input type="text" name="universityPowerOfAttorney" class="edit-university__input-text">
+										</label>
+
+										<label class="edit-university__label">
+											Дата доверенности:
+
+											<input type="text" name="universityPowerOfAttorneyDate" class="edit-university__input-text">
+										</label>
+
+										<label class="edit-university__label-file">
+											Скан подписи:
+
+											<input type="file" name="universitySignatureScan" class="edit-university__input-file" id="universitySignatureScan">
+										</label>
+
+										<input type="submit" class="edit-university__submit">
+									</form>
+								</div>
+
+								<div class="cabinet__edit-company edit-company">
+									<form method="POST" class="edit-company__form" enctype="multipart/form-data">
+										<h3 class="edit-company__title">
+											Данные о предприятии:
+										</h3>
+
+										<label class="edit-company__label">
+											Адрес предприятия:
+
+											<input type="text" name="companyAdress" class="edit-company__input-text">
+										</label>
+
+										<label class="edit-company__label">
+											Сокращённое юридическое название:
+
+											<input type="text" name="companyName" class="edit-company__input-text">
+										</label>
+
+										<label class="edit-company__label">
+											Полное юридическое название:
+
+											<input type="text" name="companyNameFull" class="edit-company__input-text">
+										</label>
+
+										<label class="edit-company__label">
+											Индекс:
+
+											<input type="text" name="companyIndex" class="edit-company__input-text">
+										</label>
+
+										<label class="edit-company__label">
+											Реквизиты:
+
+											<input type="text" name="companyRequisites" class="edit-company__input-text">
+										</label>
+										
+										<label class="edit-company__label-file">
+											Скан печати:
+
+											<input type="file" name="companyStamp" class="edit-company__input-file" id="companyStamp">
+										</label>
+
+										<h3 class="edit-company__title">
+											Данные о сотруднике предприятия:
+										</h3>
+
+										<label class="edit-company__label">
+											Ф.И.О. сотрудника:
+
+											<input type="text" name="companyEmployeeName" class="edit-company__input-text">
+										</label>
+
+										<label class="edit-company__label">
+											Полное Ф.И.О. сотрудника в родительном падеже:
+
+											<input type="text" name="companyEmployeeNameFull" class="edit-company__input-text">
+										</label>
+
+										<label class="edit-company__label">
+											Должность сотрудника (с большой буквы):
+
+											<input type="text" name="companyJobTitle" class="edit-company__input-text">
+										</label>
+
+										<label class="edit-company__label">
+											Должность сотрудника в родительном падеже (с маленькой буквы):
+
+											<input type="text" name="companyJobTitleFull" class="edit-company__input-text">
+										</label>
+
+										<label class="edit-company__label">
+											На основании чего действует представитель компании:
+
+											<input type="text" name="companyPowerOfAttorney" class="edit-company__input-text">
+										</label>
+
+										<label class="edit-company__label-file">
+											Скан подписи:
+
+											<input type="file" name="companySignatureScan" class="edit-company__input-file" id="companySignatureScan">
+										</label>
+
+										<input type="submit" class="edit-company__submit">
+									</form>
+								</div>
+							  </div>
+                        </div>
+                    </div>
+				</div>
+			  </section>
+
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<p class="footer__text">
+
+				</p>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="./js/cabinet.js"></script>
+	
+</body>
+</html>
